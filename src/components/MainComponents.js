@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 
 export const Template = styled.div`
- background-image: linear-gradient(to right, #011b47, #00102a, #000713,  #000000);`;
+  background-image: linear-gradient(
+    to right,
+    #011b47,
+    #00102a,
+    #000713,
+    #000000
+  );
+`;
 
 export const PageContainer = styled.div`
   max-width: 1280px;

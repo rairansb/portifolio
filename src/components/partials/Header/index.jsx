@@ -8,23 +8,26 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <Link to="/">
-            <span className="logo-1">L</span>
-            <span className="logo-2">O</span>
-            <span className="logo-3">J</span>
-            <span className="logo-4">A</span>
+            <span className="logo-1">R</span>
+            <span className="logo-2">S</span>
+            <span className="logo-3">B</span>
+            <span className="logo-3">-</span>
+            <span className="logo-4">D</span>
+            <span className="logo-4">E</span>
+            <span className="logo-4">V</span>
           </Link>
         </div>
         <nav>
           <ul>
             <>
               <li>
-                <Link to="/sobre">Projetos</Link>
+                <Link to="/projects">Projetos</Link>
               </li>
               <li>
                 <Link to="/planos">Habilidades</Link>
               </li>
               <li>
-                <Link to="/velocidade">Sobre</Link>
+                <Link to="/about">Sobre</Link>
               </li>
               <li>
                 <Link to="/Cliente">Contato</Link>

@@ -2,7 +2,14 @@ import styled from 'styled-components';
 
 export const FooterArea = styled.div`
   height: 100px;
-  background-image: linear-gradient(to right, #011b47, #00102a, #000713,  #000000);
+  background-image: linear-gradient(
+    to right,
+    #011b47,
+    #00102a,
+    #000713,
+    #000000
+  );
+  border-top: 2px solid #009af9;
   color: #fff;
 
   .containe {
@@ -12,11 +19,13 @@ export const FooterArea = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    ul, li, a {
+
+    ul,
+    li,
+    a {
       display: flex;
       align-items: center;
-      gap:10px;
+      gap: 10px;
       list-style: none;
       color: #fff;
     }

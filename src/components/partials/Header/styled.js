@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
 export const HeaderArea = styled.div`
-  background-image: linear-gradient(to right, #011b47, #00102a, #000713,  #000000);
+  background-image: linear-gradient(
+    to right,
+    #011b47,
+    #00102a,
+    #000713,
+    #000000
+  );
   height: 60px;
   border-bottom: 2px solid #009af9;
 
-  .container { 
+  .container {
     max-width: 1280px;
     margin: auto;
     display: flex;
