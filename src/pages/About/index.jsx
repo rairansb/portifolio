@@ -42,7 +42,7 @@ const Page = () => {
                 React.js que me permite criar soluções eficientes e modernas.
                 Além disso, minha compreensão de bancos de dados como PostgreSQL
                 e MongoDB me ajuda a otimizar a coleta e o armazenamento de
-                dados.Com isso posso atender uma gama completa de serviços, do
+                dados. Com isso posso atender uma gama completa de serviços, do
                 front-end ao back-end com banco de dados e APIs.
               </p>
             </div>
