@@ -10,7 +10,7 @@ import {
   FaWhatsapp,
   FaInstagram,
 } from 'react-icons/fa6';
-import curriculo from '../../assets/curriculo.pdf';
+
 import MotionDev from '../../components/Motions';
 
 const Page = () => {
@@ -48,9 +48,13 @@ const Page = () => {
                 </p>
 
                 <div>
-                  <Link href="#contact">Fale comigo</Link>
+                  <Link to="/contact">Fale comigo</Link>
                   <span>ou</span>
-                  <Link href={curriculo} target="_blank" className="cv">
+                  <Link
+                    to="https://drive.google.com/file/d/1RBDBgKUEy9bJeZUfgf2FZZAEb1z8kCgk/view?usp=sharing"
+                    target="_blank"
+                    className="cv"
+                  >
                     <FaDownload />
                     Baixe meu CV
                   </Link>
@@ -62,17 +66,22 @@ const Page = () => {
           <section className="iconsArea">
             <MotionDev />
             <div className="icons">
-              <Link>
+              <Link to="https://github.com/rairansb" target="_blank">
                 <FaGithub />
               </Link>
-              <Link>
+              <Link
+                to="https://www.linkedin.com/in/rairan-barbosa/"
+                target="_blank"
+              >
                 <FaLinkedin />
               </Link>
-              <Link>
-                {' '}
+              <Link
+                to="https://wa.me/5573988150582?text=Ol%C3%A1%21+vim+atrav%C3%A9s+do+seu+portf%C3%B3lio+"
+                target="_blank"
+              >
                 <FaWhatsapp />
               </Link>
-              <Link>
+              <Link to="" target="_blank">
                 <FaInstagram />
               </Link>
             </div>
