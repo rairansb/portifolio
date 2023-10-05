@@ -4,7 +4,6 @@ export const PageArea = styled.section`
   max-width: 1280px;
   display: flex;
   margin: 0 auto;
-  border: 1px solid red;
   padding-top: 20px;
 
   p {
@@ -32,10 +31,11 @@ export const PageArea = styled.section`
       align-items: center;
       justify-content: space-around;
       gap: 10px;
+
       input {
         width: 390px;
         height: 40px;
-        border-radius: 5px;
+        padding: 10px;
       }
     }
 
@@ -56,7 +56,6 @@ export const PageArea = styled.section`
     flex-direction: column;
     margin: 30px;
     padding: 50px;
-    border: 1px solid red;
     justify-content: center;
 
     .contact {
@@ -70,7 +69,6 @@ export const PageArea = styled.section`
       color: #fff;
 
       .text {
-        margin: 5px 10px;
         p {
           font-weight: bold;
         }

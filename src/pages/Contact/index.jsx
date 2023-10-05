@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import config from '../../../config';
 import { FaSpinner, FaWhatsapp } from 'react-icons/fa';
 
 import { HiCheckCircle, HiOutlineEnvelope } from 'react-icons/hi2';
@@ -21,10 +22,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        'service_3mdaogk',
-        'template_euosh1d',
+        config.ID_SERVICE,
+        config.ID_MODEL,
         form.current,
-        'ODGlU0-S6OHMvJTS9'
+        config.ID_USER
       )
       .then(
         () => {
@@ -112,7 +113,7 @@ export default function Contact() {
             {contact.icon}
             <div className="text">
               <p>{contact.name}</p>
-              <Link href={contact.link} target="_blank">
+              <Link to={contact.link} target="_blank">
                 {contact.description}
               </Link>
             </div>
