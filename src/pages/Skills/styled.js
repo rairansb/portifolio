@@ -9,6 +9,7 @@ export const PageArea = styled.section`
     #000000
   );
   color: #fff;
+  height: 800px;
   .container {
     max-width: 1280px;
     margin: 0 auto;

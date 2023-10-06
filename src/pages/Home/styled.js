@@ -3,7 +3,7 @@ import { styled } from 'styled-components';
 export const PageArea = styled.div`
   display: flex;
   align-items: center;
-  height: 800px;
+  height: 850px;
   gap: 100px;
   .presentation {
     text-align: center;
@@ -42,13 +42,14 @@ export const PageArea = styled.div`
       }
 
       a {
+        cursor: pointer;
         color: #fff;
         margin-right: 10px;
-        border-bottom: 2px solid #fff;
+        border-bottom: 3px solid #fff;
         transition: all ease 0.2s;
       }
       a:hover {
-        border-bottom: 2px solid #0d49ed;
+        border-bottom: 3px solid #018d99;
       }
 
       .cv {

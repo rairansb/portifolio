@@ -9,6 +9,7 @@ export const FooterArea = styled.div`
     #000713,
     #000000
   );
+
   border-top: 2px solid #009af9;
   color: #fff;
 

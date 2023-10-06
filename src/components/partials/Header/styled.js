@@ -8,7 +8,12 @@ export const HeaderArea = styled.div`
     #000713,
     #000000
   );
-  height: 60px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding-top: 10px;
   border-bottom: 2px solid #009af9;
 
   .container {
@@ -23,10 +28,8 @@ export const HeaderArea = styled.div`
     align-items: center;
     height: 60px;
 
-    .logo-1,
-    .logo-2,
-    .logo-3,
-    .logo-4 {
+    .logoL {
+      cursor: pointer;
       font-size: 30px;
       font-weight: bold;
       color: #fff;

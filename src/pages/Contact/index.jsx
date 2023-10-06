@@ -82,11 +82,23 @@ export default function Contact() {
             <div className="inputs">
               <div>
                 <label htmlFor="fullName">Seu nome:</label>
-                <input type="text" name="fullName" id="fullName" required />
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  autoComplete="name"
+                  required
+                />
               </div>
               <div>
                 <label htmlFor="email">Seu email:</label>
-                <input type="email" name="email" id="email" required />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autoComplete="email"
+                  required
+                />
               </div>
             </div>
 

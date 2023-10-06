@@ -1,5 +1,5 @@
 import { PageArea } from './styled';
-import { HiArrowTopRightOnSquare } from 'react-icons/hi2';
+import { TiArrowForward } from 'react-icons/ti';
 
 export default function Projects() {
   const projects = [
@@ -73,7 +73,7 @@ export default function Projects() {
                   <h4>{project.title}</h4>
                   <p>{project.description}</p>
                   <a href={project.link} target="_blank">
-                    <HiArrowTopRightOnSquare />
+                    <TiArrowForward />
                   </a>
                 </div>
               </div>

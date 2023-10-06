@@ -1,6 +1,7 @@
 import { PageArea } from './styled';
 import { TypeAnimation } from 'react-type-animation';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link as Redirect } from 'react-router-dom';
 
 import { PageContainer, Template } from '../../components/MainComponents';
 import {
@@ -48,16 +49,25 @@ const Page = () => {
                 </p>
 
                 <div>
-                  <Link to="/contact">Fale comigo</Link>
-                  <span>ou</span>
                   <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={800}
+                  >
+                    Fale comigo
+                  </Link>
+                  <span>ou</span>
+                  <Redirect
                     to="https://drive.google.com/file/d/1RBDBgKUEy9bJeZUfgf2FZZAEb1z8kCgk/view?usp=sharing"
                     target="_blank"
                     className="cv"
                   >
-                    <FaDownload />
+                    <FaDownload style={{ marginRight: 5 }} />
                     Baixe meu CV
-                  </Link>
+                  </Redirect>
                 </div>
               </div>
             </div>

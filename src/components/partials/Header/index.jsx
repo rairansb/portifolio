@@ -1,47 +1,79 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { HeaderArea } from './styled';
 
-const Header = () => {
-  return (
-    <HeaderArea>
-      <div className="container">
-        <div className="logo">
-          <Link to="/">
-            <span className="logo-1">R</span>
-            <span className="logo-2">S</span>
-            <span className="logo-3">B</span>
-            <span className="logo-3">-</span>
-            <span className="logo-4">D</span>
-            <span className="logo-4">E</span>
-            <span className="logo-4">V</span>
-          </Link>
+export default class Header extends Component {
+  render() {
+    return (
+      <HeaderArea style={{}}>
+        <div className="container">
+          <div className="logo">
+            <Link to="#">
+              <span className="logoL">R</span>
+              <span className="logoL">S</span>
+              <span className="logoL">B</span>
+              <span className="logoL">-</span>
+              <span className="logoL">D</span>
+              <span className="logoL">E</span>
+              <span className="logoL">V</span>
+            </Link>
+          </div>
+          <nav>
+            <ul>
+              <>
+                <li className="nav-item">
+                  <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={600}
+                  >
+                    Sobre
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    activeClass="active"
+                    to="projetcts"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={700}
+                  >
+                    Projetos
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={700}
+                  >
+                    Habilidades
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={800}
+                  >
+                    Contato
+                  </Link>
+                </li>
+              </>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <>
-              <li>
-                <Link to="/about">Sobre</Link>
-              </li>
-              <li>
-                <Link to="/projects">Projetos</Link>
-              </li>
-              <li>
-                <Link to="/skills">Habilidades</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contato</Link>
-              </li>
-              <li>
-                <button>B</button>
-                <button>W</button>
-              </li>
-            </>
-          </ul>
-        </nav>
-      </div>
-    </HeaderArea>
-  );
-};
-
-export default Header;
+      </HeaderArea>
+    );
+  }
+}

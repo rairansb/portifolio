@@ -11,12 +11,18 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
     "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@mui/icons-material": "^5.14.12",
+    "@mui/material": "^5.14.12",
     "dotenv": "^16.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.15.0",
+    "react-scroll": "^1.9.0",
     "react-slideshow-image": "^4.2.1",
     "react-type-animation": "^3.1.0",
     "styled-components": "^6.0.7"

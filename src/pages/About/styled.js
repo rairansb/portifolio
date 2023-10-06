@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const PageArea = styled.section`
+  height: 100%;
   padding: 50px 0;
   text-align: center;
   margin: 0 auto;

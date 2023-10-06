@@ -1,24 +1,27 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import Header from './components/partials/Header';
+import Footer from './components/partials/Footer';
 
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Skills from './pages/Skills';
-import NotFound from './pages/NotFound';
 
-const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/skills" element={<Skills />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  );
-};
+class AppRoutes extends Component {
+  render() {
+    return (
+      <>
+        <Header />
+        <Home id="home" />
+        <About id="about" />
+        <Projects id="projetcts" />
+        <Skills id="skills" />
+        <Contact id="contact" />
+        <Footer />
+      </>
+    );
+  }
+}
 
 export default AppRoutes;

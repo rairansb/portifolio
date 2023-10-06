@@ -17,20 +17,30 @@ export const PageArea = styled.section`
       .card {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
         padding-top: 20px;
-        width: 32%;
+        width: 350px;
 
         img {
-          width: 400px;
-          height: 350px;
-          border-radius: 15px;
+          width: 350px;
+          height: 300px;
+          border-radius: 15px 15px 0 0;
         }
         .detalhes {
-          width: 400px;
-          position: relative;
-          background: #ccc;
-          top: -30px;
+          width: 350px;
+          background: #bbb;
+
+          a {
+            position: relative;
+            left: 175px;
+            bottom: -10px;
+            background: #018d99;
+            padding: 0px 5px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 30px;
+          }
         }
       }
     }
