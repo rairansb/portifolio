@@ -5,6 +5,7 @@ import config from '../../../config';
 import { FaSpinner, FaWhatsapp } from 'react-icons/fa';
 
 import { HiCheckCircle, HiOutlineEnvelope } from 'react-icons/hi2';
+import { Template } from '../../components/MainComponents';
 import { PageArea } from './styled';
 
 export default function Contact() {
@@ -56,82 +57,84 @@ export default function Contact() {
   ];
 
   return (
-    <PageArea>
-      <div className="containerForm">
-        <div>
-          <h2>
-            <span>Fale </span>
-            <span>Comigo</span>
-          </h2>
-          <p>
-            Entre em contato por formulário ou WhatsApp, com certeza irei poder
-            te ajudar.
-          </p>
-        </div>
-        <div>
-          <form ref={form} onSubmit={sendEmail}>
-            <div>
-              <label htmlFor="message">Mensagem:</label>
-              <textarea
-                id="message"
-                name="message"
-                className="textArea"
-                required
-              />
-            </div>
-            <div className="inputs">
-              <div>
-                <label htmlFor="fullName">Seu nome:</label>
-                <input
-                  type="text"
-                  name="fullName"
-                  id="fullName"
-                  autoComplete="name"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="email">Seu email:</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  autoComplete="email"
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <button type="submit" disabled={loading}>
-                {loading && <FaSpinner />}
-                {success && <HiCheckCircle />}
-                Enviar mensagem
-              </button>
-
-              {error && (
-                <p>
-                  Ocorreu um erro ao enviar a mensagem, tente novamente mais
-                  tarde.
-                </p>
-              )}
-            </div>
-          </form>
-        </div>
-      </div>
-      <div className="containerDados">
-        {contacts.map((contact, index) => (
-          <div key={`contact-${index}`} className="contact">
-            {contact.icon}
-            <div className="text">
-              <p>{contact.name}</p>
-              <Link to={contact.link} target="_blank">
-                {contact.description}
-              </Link>
-            </div>
+    <Template>
+      <PageArea>
+        <div className="containerForm">
+          <div>
+            <h2>
+              <span>Fale </span>
+              <span>Comigo</span>
+            </h2>
+            <p>
+              Entre em contato por formulário ou WhatsApp, com certeza irei
+              poder te ajudar.
+            </p>
           </div>
-        ))}
-      </div>
-    </PageArea>
+          <div>
+            <form ref={form} onSubmit={sendEmail}>
+              <div>
+                <label htmlFor="message">Mensagem:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  className="textArea"
+                  required
+                />
+              </div>
+              <div className="inputs">
+                <div>
+                  <label htmlFor="fullName">Seu nome:</label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    autoComplete="name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email">Seu email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autoComplete="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <button type="submit" disabled={loading}>
+                  {loading && <FaSpinner />}
+                  {success && <HiCheckCircle />}
+                  Enviar mensagem
+                </button>
+
+                {error && (
+                  <p>
+                    Ocorreu um erro ao enviar a mensagem, tente novamente mais
+                    tarde.
+                  </p>
+                )}
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className="containerDados">
+          {contacts.map((contact, index) => (
+            <div key={`contact-${index}`} className="contact">
+              {contact.icon}
+              <div className="text">
+                <p>{contact.name}</p>
+                <Link to={contact.link} target="_blank">
+                  {contact.description}
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </PageArea>
+    </Template>
   );
 }

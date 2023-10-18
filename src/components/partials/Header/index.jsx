@@ -1,72 +1,40 @@
 import React, { Component } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { HeaderArea } from './styled';
+import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa6';
 
 export default class Header extends Component {
   render() {
     return (
-      <HeaderArea style={{}}>
+      <HeaderArea>
         <div className="container">
-          <div className="logo">
-            <Link to="#">
-              <span className="logoL">R</span>
-              <span className="logoL">S</span>
-              <span className="logoL">B</span>
-              <span className="logoL">-</span>
-              <span className="logoL">D</span>
-              <span className="logoL">E</span>
-              <span className="logoL">V</span>
-            </Link>
-          </div>
-          <nav>
-            <ul>
+          <nav className="iconsArea">
+            <ul className="icons">
               <>
                 <li className="nav-item">
-                  <Link
-                    activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={600}
-                  >
-                    Sobre
+                  <Link to="https://github.com/rairansb" target="blank">
+                    <FaGithub />
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link
-                    activeClass="active"
-                    to="projetcts"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={700}
+                    to="https://www.linkedin.com/in/rairan-barbosa/"
+                    target="blank"
                   >
-                    Projetos
+                    <FaLinkedin />
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="https://github.com/rairansb" target="blank">
+                    <FaInstagram />
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link
-                    activeClass="active"
-                    to="skills"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={700}
+                    to="https://wa.me/5573988150582?text=Ol%C3%A1%21+vim+atrav%C3%A9s+do+seu+portf%C3%B3lio+"
+                    target="blank"
                   >
-                    Habilidades
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={800}
-                  >
-                    Contato
+                    <FaWhatsapp />
                   </Link>
                 </li>
               </>

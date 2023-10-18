@@ -30,42 +30,38 @@ export default function Skills() {
     {
       name: 'HTML5',
       icon: 'images/html.svg',
-      level: 95,
     },
     {
       name: 'CSS3',
       icon: 'images/css.svg',
-      level: 95,
     },
     {
       name: 'JavaScript',
       icon: 'images/javascript.svg',
-      level: 90,
     },
     {
       name: 'TypeScript',
       icon: 'images/typescript.svg',
-      level: 50,
     },
     {
       name: 'React.js',
       icon: 'images/react.svg',
-      level: 85,
     },
     {
       name: 'Node.js',
       icon: 'images/nodejs.svg',
-      level: 70,
     },
     {
       name: 'PostgreSQL',
       icon: 'images/postgres.svg',
-      level: 65,
     },
     {
       name: 'MongoDB',
       icon: 'images/mongodb.svg',
-      level: 50,
+    },
+    {
+      name: 'GitHub',
+      icon: 'images/github.svg',
     },
   ];
 
@@ -110,12 +106,6 @@ export default function Skills() {
                   </div>
                   <div>
                     <h4>{skill.name}</h4>
-                    <div className="bgStatusBar">
-                      <div
-                        className="statusBar"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
                   </div>
                 </div>
               ))}

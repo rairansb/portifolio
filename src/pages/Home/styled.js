@@ -1,9 +1,10 @@
 import { styled } from 'styled-components';
 
 export const PageArea = styled.div`
+  padding: 210px 0;
   display: flex;
   align-items: center;
-  height: 850px;
+  justify-content: center;
   gap: 100px;
   .presentation {
     text-align: center;

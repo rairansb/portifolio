@@ -15,7 +15,7 @@ class AppRoutes extends Component {
         <Header />
         <Home id="home" />
         <About id="about" />
-        <Projects id="projetcts" />
+        <Projects id="projects" />
         <Skills id="skills" />
         <Contact id="contact" />
         <Footer />

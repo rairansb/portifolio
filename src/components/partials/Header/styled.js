@@ -15,73 +15,34 @@ export const HeaderArea = styled.div`
   height: 80px;
   padding-top: 10px;
   border-bottom: 2px solid #009af9;
+  
 
   .container {
     max-width: 1280px;
     margin: auto;
     display: flex;
-  }
-
-  .logo {
-    flex: 1;
-    display: flex;
     align-items: center;
-    height: 60px;
-
-    .logoL {
-      cursor: pointer;
-      font-size: 30px;
-      font-weight: bold;
-      color: #fff;
-    }
+    justify-content: center;
   }
-
-  nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    ul,
-    li {
-      magin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    ul {
+    .icons {
+      margin-top: 10px;
       display: flex;
       align-items: center;
-      height: 40px;
-      gap: 30px;
-    }
-    li {
-      a,
-      button {
-        padding: 2px 5px;
-        border: 0;
-        background: none;
-        cursor: pointer;
+      justify-content: center;
+      gap: 40px;
+  
+     a {
+        font-size: 35px;
+        color: #25a7f8;
+        transition: all ease 0.2s;
+     }
+      a:hover {
         color: #fff;
-        font-size: 14px;
-        font-weight: bold;
-        text-decoration: none;
-        outline: 0;
-
-        &:hover {
-          border-radius: 4px;
-          background-color: #607ec9;
-        }
-
-        &.button {
-          background-color: #1c4c96;
-          border-radius: 4px;
-          color: #fff;
-          padding: 5px 10px;
-        }
-
-        &.button:hover {
-          background-color: #607ec9;
-        }
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
       }
     }
   }
+}
 `;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Template = styled.div`
+export const Template = styled.section`
   background-image: linear-gradient(
     to right,
     #011b47,
@@ -10,9 +10,9 @@ export const Template = styled.div`
   );
 `;
 
-export const PageContainer = styled.div`
+export const PageContainer = styled.section`
   max-width: 1280px;
-  margin: auto;
+  margin: 0 auto;
 
   
   }
@@ -20,14 +20,4 @@ export const PageContainer = styled.div`
 
 export const PageTitle = styled.h1`
   font-size: 27px;
-`;
-
-export const PageBody = styled.div``;
-
-export const ErrorMessage = styled.div`
-  margin: 10px 0;
-  padding: 5px;
-  background-color: #ffcaca;
-  color: #000;
-  border: 2px solid #ff0000;
 `;

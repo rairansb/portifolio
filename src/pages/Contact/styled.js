@@ -1,6 +1,7 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 export const PageArea = styled.section`
+  color: #fff;
   max-width: 1280px;
   display: flex;
   margin: 0 auto;
@@ -19,6 +20,7 @@ export const PageArea = styled.section`
       font-weight: bold;
     }
     textarea {
+      background: #ddd;
       padding: 10px;
       width: 100%;
       height: 200px;
@@ -33,6 +35,7 @@ export const PageArea = styled.section`
       gap: 10px;
 
       input {
+        background: #ddd;
         width: 390px;
         height: 40px;
         padding: 10px;

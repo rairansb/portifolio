@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 export const PageArea = styled.section`
-  height: 100%;
-  padding: 50px 0;
+  background: #ccc;
   text-align: center;
-  margin: 0 auto;
-  color: #fff;
+  padding-top: 100px;
+  color: #000;
+  padding-bottom: 100px;
   .main {
-    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;

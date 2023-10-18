@@ -1,15 +1,8 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 export const PageArea = styled.section`
-  background-image: linear-gradient(
-    to right,
-    #011b47,
-    #00102a,
-    #000713,
-    #000000
-  );
-  color: #fff;
-  height: 800px;
+  color: #000;
+  background: #ccc;
   .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -29,6 +22,7 @@ export const PageArea = styled.section`
       justify-content: space-around;
 
       .education {
+        max-width: 600px;
         margin-left: 10px;
         h3 {
           font-size: 25px;
@@ -40,7 +34,7 @@ export const PageArea = styled.section`
       }
 
       .skills {
-        max-width: 700px;
+        max-width: 500px;
         h3 {
           font-size: 25px;
         }
@@ -48,8 +42,9 @@ export const PageArea = styled.section`
           display: flex;
           flex-wrap: wrap;
           .card {
+            text-align: center;
             margin: 10px;
-            width: 200px;
+            width: 130px;
 
             img {
               height: 80px;
