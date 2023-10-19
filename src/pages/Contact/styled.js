@@ -43,6 +43,8 @@ export const PageArea = styled.section`
     }
 
     button {
+      display: flex;
+      align-items: center;
       margin-top: 20px;
       padding: 15px 15px;
       border-radius: 10px;

@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import config from '../../../config';
 import { FaSpinner, FaWhatsapp } from 'react-icons/fa';
@@ -13,6 +13,12 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+
+  useEffect(() => {
+    if (success) {
+      form.current.reset();
+    }
+  }, [success]);
 
   const sendEmail = event => {
     event.preventDefault();
@@ -106,8 +112,14 @@ export default function Contact() {
 
               <div>
                 <button type="submit" disabled={loading}>
-                  {loading && <FaSpinner />}
-                  {success && <HiCheckCircle />}
+                  {loading && (
+                    <FaSpinner style={{ width: 30, height: 30, padding: 5 }} />
+                  )}
+                  {success && (
+                    <HiCheckCircle
+                      style={{ width: 30, height: 30, padding: 5 }}
+                    />
+                  )}
                   Enviar mensagem
                 </button>
 
